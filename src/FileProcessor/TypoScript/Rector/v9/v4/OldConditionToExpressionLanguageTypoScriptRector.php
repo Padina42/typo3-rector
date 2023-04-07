@@ -110,7 +110,7 @@ final class OldConditionToExpressionLanguageTypoScriptRector extends AbstractTyp
 
         if (count($operators) !== (count($newConditions) - 1)) {
             throw new LogicException(
-                'The count of operators must be exactly one less than the count of conditions'
+                'The count of operators must be exactly one less than the count of conditions '. print_r($operators,true) . "\n". print_r($newConditions, true)
             );
         }
 
